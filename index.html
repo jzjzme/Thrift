@@ -20,48 +20,18 @@
                 <img src="images/logo.jpg" alt="logo">
             </a>
             <nav class="nav-menu">
-            
                 <a href="" class="nav-menu__item">Dashboard</a>
                 <a href="" class="nav-menu__item">Profile</a>
                 <a href="" class="nav-menu__item">Community</a>
                 <a href="" class="nav-menu__item nav-menu__item--rounded">Store</a>
             </nav>
-
         </div>
 	</header>
             
 	<section class="dashboard">
         <div class="container">
-        <!--Start of Modal -->
-        <div class="modal">
-            <input id="modal__trigger" type="checkbox" />
 
-            <div class="modal__overlay" role="dialog" aria-labelledby="modal__title" aria-describedby="modal_desc">
-                <div class="modal__wrap">
-                    <label for="modal__trigger">&#10006;</label>
-                    <h2 id="modal__title">This is your modal content</h2>
-                    <p id="modal__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac laoreet elit. Phasellus dignissim purus vitae urna cursus, quis congue ligula tristique. Ut nec blandit risus. Donec at orci ut justo venenatis viverra. Suspendisse in volutpat lacus. In enim est, dapibus eget ipsum sed, suscipit ultrices diam.</p>
-                </div>
-            </div>
-        </div>
-        <!--End of Modal -->
-
-        <!--Start of Modal -->
-        <div class="modal2">
-            <input id="modal2__trigger" type="checkbox" />
-
-            <div class="modal2__overlay" role="dialog" aria-labelledby="modal2__title" aria-describedby="modal2_desc">
-                <div class="modal2__wrap">
-                    <label for="modal2__trigger">&#10006;</label>
-                    <h2 id="modal2__title">This is your modal content 2</h2>
-                    <p id="modal2__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac laoreet elit. Phasellus dignissim purus vitae urna cursus, quis congue ligula tristique. Ut nec blandit risus. Donec at orci ut justo venenatis viverra. Suspendisse in volutpat lacus. In enim est, dapibus eget ipsum sed, suscipit ultrices diam.</p>
-                </div>
-            </div>
-        </div>
-        <!--End of Modal -->
-
- <label for="modal__trigger">
-        <aside class="reward-bar">
+            <aside class="reward-bar" data-toggle="modal" data-target="#modal_1">
                 <h3>Food <br/> <span>$100</span></h3>
                 <div class="progress-bar">
                     <div class="progress-bar__vertical">
@@ -71,10 +41,8 @@
                 </div>
                 <h3>Start</h3>
             </aside>
-</label>
 
-<label for="modal2__trigger">
-            <aside class="reward-bar">
+            <aside class="reward-bar" data-toggle="modal" data-target="#modal_2">
                 <h3>Clothing <br/> <span>$100</span></h3>
                 <div class="progress-bar">
                     <div class="progress-bar__vertical">
@@ -84,7 +52,6 @@
                 </div>
                 <h3>Start</h3>
             </aside>
-</label>
 
             <div class="widget-container">
                 <div class="widget widget__2y">
@@ -108,7 +75,7 @@
                                 </div>
                             </td>
                             <td>
-                                <div class="user-name">John Jameson</div>
+                                <div class="user-name">Bobby Yang</div>
                             </td>
                             <td>
                                 <div class="user-start">$56</div>
@@ -121,7 +88,7 @@
                                 </div>
                             </td>
                             <td>
-                                <div class="user-name">John Jameson</div>
+                                <div class="user-name">Bobby Yang</div>
                             </td>
                             <td>
                                 <div class="user-start">$56</div>
@@ -134,7 +101,7 @@
                                 </div>
                             </td>
                             <td>
-                                <div class="user-name">John Jameson</div>
+                                <div class="user-name">Bobby Yang</div>
                             </td>
                             <td>
                                 <div class="user-start">$56</div>
@@ -147,7 +114,7 @@
                                 </div>
                             </td>
                             <td>
-                                <div class="user-name">John Jameson</div>
+                                <div class="user-name">Bobby Yang</div>
                             </td>
                             <td>
                                 <div class="user-start">$56</div>
@@ -160,7 +127,7 @@
                                 </div>
                             </td>
                             <td>
-                                <div class="user-name">John Jameson</div>
+                                <div class="user-name">Bobby Yang</div>
                             </td>
                             <td>
                                 <div class="user-start">$56</div>
@@ -173,20 +140,17 @@
                      <h4>Featured Thrift of the Day</h4>
                      <div class="thumbs-slider">
                          <ul class="thumbs-slider-list">
-                             <li class="thumbs-slider-item">
-                                 <img src="images/logo.jpg" alt="slide"/>
+                             <li class="thumbs-slider-item" data-toggle="modal" data-target="#modal_3">
+                                 <img src="images/slides/walmart.png" alt="slide"/>
                              </li>
-                             <li class="thumbs-slider-item">
-                                 <img src="images/walmart.jpg" alt="slide"/>
-                             </li>
-                             <li class="thumbs-slider-item">
-                                 <img src="images/walmart.jpg" alt="slide"/>
+                             <li class="thumbs-slider-item" data-toggle="modal" data-target="#modal_4">
+                                 <img src="images/slides/thrift.png" alt="slide"/>
                              </li>
                          </ul>
-                         <div class="thumbs-slider-nav">
-                             <span class="thumbs-slider-nav-left">&lsaquo;</span>
-                             <span class="thumbs-slider-nav-right">&rsaquo;</span>
-                         </div>
+
+                         <span class="thumbs-slider-nav-left">&lsaquo;</span>
+                         <span class="thumbs-slider-nav-right">&rsaquo;</span>
+
                      </div>
                 </div>
 
@@ -195,7 +159,7 @@
                     <div class="user-logo user-logo--big">
                         <img src="images/user-placeholder-big.jpg">
                     </div>
-                    <h5>Jhonattan Demmy</h5>
+                    <h5>Jackie Zhang</h5>
                 </div>
 
                 <div class="widget widget__2x">
@@ -215,8 +179,63 @@
         </div>
 	</section>
 
+    <div class="modal" id="modal_1">
+        <div class="modal-header">
+            <h3>This is your modal content 1</h3>
+            <span class="modal-close" data-dismiss="modal">&times;</span>
+        </div>
+        <div class="modal-body">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac laoreet elit. Phasellus dignissim purus vitae urna cursus, quis congue ligula tristique. Ut nec blandit risus. Donec at orci ut justo venenatis viverra. Suspendisse in volutpat lacus. In enim est, dapibus eget ipsum sed, suscipit ultrices diam.</p>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-blue" data-dismiss="modal">Okay</button>
+        </div>
+    </div>
+
+    <div class="modal" id="modal_2">
+        <div class="modal-header">
+            <h3>This is your modal content 2</h3>
+            <span class="modal-close" data-dismiss="modal">&times;</span>
+        </div>
+        <div class="modal-body">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac laoreet elit. Phasellus dignissim purus vitae urna cursus, quis congue ligula tristique. Ut nec blandit risus. Donec at orci ut justo venenatis viverra. Suspendisse in volutpat lacus. In enim est, dapibus eget ipsum sed, suscipit ultrices diam.</p>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-blue" data-dismiss="modal">Okay</button>
+        </div>
+    </div>
+
+    <div class="modal" id="modal_3">
+        <div class="modal-header">
+            <h3>Walmart Challenge</h3>
+            <span class="modal-close" data-dismiss="modal">&times;</span>
+        </div>
+        <div class="modal-body">
+            <img src="images/slides/walmart.png" alt="slide"/>
+            <p>Show me what you got! Get thrifty by saving $50.00 with daily sales from Walmart for a chance to win a $50 visa gift card!</p>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-blue" data-dismiss="modal">Okay</button>
+        </div>
+    </div>
+
+    <div class="modal" id="modal_4">
+        <div class="modal-header">
+            <h3>Thrift Shop Challenge</h3>
+            <span class="modal-close" data-dismiss="modal">&times;</span>
+        </div>
+        <div class="modal-body">
+            <img src="images/slides/thrift.png" alt="slide"/>
+            <p>It's time to get thrifty! Take out your credit card and earn some rewards by purchasing $100 worth of clothes.</p>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-blue" data-dismiss="modal">Okay</button>
+        </div>
+    </div>
+
     <script src="https://code.jquery.com/jquery-2.1.4.js"></script>
     <script src="js/thumbs-slider.js"></script>
+    <script src="js/bootstrap.js"></script>
     <script src="js/bpopup.min.js"></script>
     <script type="text/javascript" src="js/scripts.js"></script>
 
